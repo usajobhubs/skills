@@ -1,0 +1,169 @@
+<html><head><base href="/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Paypal Job Services - Your Staffing Solutions Partner</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        scroll-behavior: smooth;
+    }
+    .header {
+        background: linear-gradient(135deg, #0056b3, #007bff);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    .logo {
+        max-width: 200px;
+        transition: transform 0.3s ease;
+    }
+    .logo:hover {
+        transform: scale(1.05);
+    }
+    .hero {
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbkQ1Hdjk-BUeZdabfz396B8FtKx7VkNMJWA&s') no-repeat center center/cover;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        padding-top: 100px;
+    }
+    .hero-content {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 2rem;
+        border-radius: 15px;
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #ff6b6b;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        margin-top: 1rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .cta-button:hover {
+        background-color: #ff4757;
+        transform: translateY(-3px);
+    }
+    .services {
+        padding: 4rem 2rem;
+        background-color: #f8f9fa;
+    }
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .service-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .service-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+        animation: fadeIn 1s ease-out;
+    }
+</style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqK1UK6K3LRsRQyd5bsdII05xVw6_1-rTnjA&s" class="logo" width="80" height="80">
+    </header>
+
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <h1>Welcome to Paypal Job Services</h1>
+            <p>part-time Full-time employment is usually considered between 30-40 hours a week salary sent $65 per hour .</p>
+            <a href="https://www.opph3hftrk.com/L8FWGCL/2D7FR58/?sub1=109" class="cta-button">apply now</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Staffing Solutions</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon">👥</div>
+                <h3>Temporary Staffing</h3>
+                <p>Flexible workforce solutions for short-term needs and project-based work.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>Direct Hire</h3>
+                <p>Find your next star employee with our expert recruitment services.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h3>Temp-to-Hire</h3>
+                <p>Test-drive talent before making a permanent commitment.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Workforce Solutions</h3>
+                <p>Comprehensive strategies to optimize your entire workforce ecosystem.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Paypal job Services. All rights reserved. | <a href="https://www.dollartree.com/privacy-policy/" style="color: #ff6b6b;">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, {threshold: 0.1});
+
+            document.querySelectorAll('.service-card').forEach(card => {
+                observer.observe(card);
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
